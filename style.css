@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* variabili colori principali per text e background*/
+:root{
+    --colore: rgb(226, 212, 212);
+    --testo: white;
+    --testo_mail: black;
+    --testo_contenido: rgb(139, 129, 129);
+}
+
+body{
+    background-image: url(https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg);
+    color: var(--testo);
+}
+
+header, .container, footer{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Style logo */
+.logo, .logo__h1 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.logo__gmail{
+    width: 75px;
+    margin-bottom: -10px;
+}
+
+header hr{
+    margin: 2px 0 10px;
+}
+
+/* Style search */
+.search{
+    color: var(--testo);
+}
+
+.search hr{
+    margin: 10px 0;
+}
+
+.search__conto{
+    background-color: orange;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 20px;
+}
+
+/* Style delle mail */
+/* Dare sempre un width al cotenitore per dare misure a gli ellementi */
+.mail, .mail__read{
+    border: 1px black solid;
+    width: 100%;
+
+}
+
+/* Style mail unread */
+.mail__unread{
+    color: var(--testo_mail);
+    width: 45%;
+}
+
+.mail__text--unread{
+    width: 50%;
+    color: var(--testo_contenido);
+
+}
+
+.mail, .mail__unread, .mail__text--unread{
+    background-color: var(--colore);
+    display: inline-block;
+}
+
+/* Style mail read */
+.read{
+    color: var(--testo_mail);
+    width: 45%;
+}
+
+.text--read{
+    width: 50%;
+    color: var(--testo_contenido);
+}
+
+.mail__read, .read, .text--read{
+    background-color: var(--testo);
+    display: inline-block;
+}
+
+/* Style footer */
+.footer{
+    text-align: center;
+    font-weight: 900;
+}
+
+footer hr{
+    margin: 10px 0;
+}
